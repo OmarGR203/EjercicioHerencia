@@ -1,4 +1,4 @@
 package com.guzman.departamentos.subacademica;
 
-public class IngGestion extends SubAcademica{
+public class IngGestion extends SubAcademica {
 }
