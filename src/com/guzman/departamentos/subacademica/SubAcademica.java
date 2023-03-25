@@ -13,5 +13,21 @@ public class SubAcademica extends Subdireccion{
         this.nombreCarrera = nombreCarrera;
         this.numSemestres = numSemestres;
     }
+
+    public String getNombreCarrera() {
+        return nombreCarrera;
+    }
+
+    public void setNombreCarrera(String nombreCarrera) {
+        this.nombreCarrera = nombreCarrera;
+    }
+
+    public int getNumSemestres() {
+        return numSemestres;
+    }
+
+    public void setNumSemestres(int numSemestres) {
+        this.numSemestres = numSemestres;
+    }
 }
 
