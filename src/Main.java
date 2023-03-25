@@ -1,4 +1,5 @@
 import com.guzman.departamentos.Direccion;
+import com.guzman.departamentos.planeacion.Extraescolares;
 import com.guzman.departamentos.subacademica.Division;
 import com.guzman.departamentos.subacademica.SubAcademica;
 
@@ -7,6 +8,7 @@ public class Main {
         registrarDireccion();
         registrarSubAcademica();
         registrarDivision();
+        regitrarExtraescolar();
 
     }
 
@@ -78,4 +80,25 @@ public class Main {
         System.out.println(informacionDivision);
 
     }
+
+    public static void regitrarExtraescolar(){
+        Extraescolares extraescolar = new Extraescolares();
+        extraescolar.setNombre("Banda de guerra");
+        extraescolar.setRolExtraescolar("Cultural");
+        extraescolar.setNombrePuesto("Carlos Alberto Guerrero Sandoval");
+        extraescolar.setEmail("bandaguerraextraescolar601@teziutlan.tecnm.mx");
+        extraescolar.setNumTelefonico("221 456 34 34");
+        extraescolar.setUbicacion("D");
+
+    String informacionExtraecolar = "Nombre de la extraescolar: " + extraescolar.getNombre()
+            + "\nNombre del docente: " + extraescolar.getNombrePuesto()
+            + "\nRol de la extraescolar: " + extraescolar.getRolExtraescolar()
+            + "\nEmail: " + extraescolar.getEmail()
+            + "\nNúmero telefónico: " + extraescolar.getNumTelefonico()
+            + "\nEdificio : " + extraescolar.getUbicacion() + "\n";
+
+        System.out.println(informacionExtraecolar);
+
+    }
+
 }
